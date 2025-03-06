@@ -13,3 +13,6 @@ spring:
       max-create-connection-time: 2s
       initial-size: 5
       max-size: 10
+
+polar:
+  catalog-service-uri: "http://${CATALOG_SERVICE_HOSTNAME:localhost}:${CATALOG_SERVICE_PORT:9001}"
