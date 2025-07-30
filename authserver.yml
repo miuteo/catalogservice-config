@@ -2,10 +2,7 @@ spring:
   datasource:
     username: user
     password: password
-    url: jdbc:postgresql://${DB_HOSTNAME:localhost}:5432/authserver
+    url: jdbc:postgresql://${DB_HOSTNAME:localhost}:5432/polardb_auth
     hikari:
       connection-timeout: 2000
       maximum-pool-size: 5
-      
-  sql:
-    init: always    
